@@ -1,2 +1,291 @@
 This is just a warning, you will recieve multiple warnings before any further actions are taken.
  This is the scond line of text
+
+Sysop@Sysop-PC MINGW64 ~/Documents
+$ pwd
+/c/Users/Sysop/Documents
+
+Sysop@Sysop-PC MINGW64 ~/Documents
+$ cd c:/users/syop/mydocuments
+bash: cd: c:/users/syop/mydocuments: No such file or directory
+
+Sysop@Sysop-PC MINGW64 ~/Documents
+$ cd c:users/
+
+Sysop@Sysop-PC MINGW64 /c/users
+$ hostname
+Sysop-PC
+
+Sysop@Sysop-PC MINGW64 /c/users
+$ cd c:users/ ls
+
+Sysop@Sysop-PC MINGW64 /c/users
+$ ls
+Administrator/  Classic .NET AppPool/  Default User@    desktop.ini  Public/
+All Users@      Default/               DefaultAppPool/  Lee/         Sysop/
+
+Sysop@Sysop-PC MINGW64 /c/users
+$ cd c:users/sysop/
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop
+$ documents
+bash: documents: command not found
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop
+$ cd documents
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents
+$ git clone https://github.com/ESysop/MyStory
+Cloning into 'MyStory'...
+fatal: unable to access 'https://github.com/ESysop/MyStory/': Couldn't resolve host 'github.com'
+
+**refresh fixed this
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents
+$ git clone https://github.com/ESysop/MyStory
+Cloning into 'MyStory'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents
+$ cd mystory
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ ls
+README.md
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        StoryOne.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git add .
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   StoryOne.txt
+
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <Sysop@Sysop-PC.(none)>) not allowed
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "initial commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <Sysop@Sysop-PC.(none)>) not allowed
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   StoryOne.txt
+
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git pull origin master
+
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git pull origin master
+From https://github.com/ESysop/MyStory
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+Everything up-to-date
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   StoryOne.txt
+
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git config --global user.email "leehassel@gmail.com"
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git config --global user.name "esysop"
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "initial commit"
+[master 70dd9a1] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 StoryOne.txt
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ESysop/MyStory
+   cdc4204..70dd9a1  master -> master
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   StoryOne.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "initial commit"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   StoryOne.txt
+
+no changes added to commit
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+Everything up-to-date
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ gitstatus
+bash: gitstatus: command not found
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   StoryOne.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   StoryOne.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "second commit"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   StoryOne.txt
+
+no changes added to commit
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ESysop/MyStory/'
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+Everything up-to-date
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   StoryOne.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git add .
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git commit -m "second commit"
+[master b722418] second commit
+ 1 file changed, 2 insertions(+)
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 374 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ESysop/MyStory
+   70dd9a1..b722418  master -> master
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Sysop@Sysop-PC MINGW64 /c/users/sysop/documents/mystory (master)
+$
